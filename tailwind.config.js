@@ -22,6 +22,12 @@ module.exports = {
       padding: {
         6.5: "1.563rem",
       },
+      fontSize: {
+        "6.5xl": "4rem",
+      },
+      lineHeight: {
+        title: "4.5rem",
+      },
       backgroundImage: {
         "home-header-texture": "url('/home-header-bg.svg')",
       },

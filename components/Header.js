@@ -1,8 +1,13 @@
+import Image from "next/image";
+import Container from "./Container";
+import Title from "./headings/Title";
 import Navbar from "./Navbar";
+import Content from "./Content";
+import Button from "./button/Button";
 
-const Header = ({ children }) => {
+const Header = ({ style, children }) => {
   return (
-    <header className="bg-home-header-texture bg-cover py-8">
+    <header className={style}>
       <div className="w-[1280px] max-w-[80%] mx-auto">{children}</div>
     </header>
   );

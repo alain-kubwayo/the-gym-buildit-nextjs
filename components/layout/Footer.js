@@ -27,8 +27,8 @@ const Footer = () => {
                 <ListItem content="Service 4" />
               </List>
               <div className="flex gap-x-4">
-                <Image src="/instagram-icon.svg" width={24} height={24} />
-                <Image src="/facebook-icon.svg" width={24} height={24} />
+                <Image src="/instagram-icon.svg" width={40} height={40} />
+                <Image src="/facebook-icon.svg" width={40} height={40} />
               </div>
             </div>
           </div>

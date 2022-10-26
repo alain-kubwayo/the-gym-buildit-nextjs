@@ -54,6 +54,7 @@ export default function Home() {
           </Container>
         </div>
       </Header>
+
       <div className="bg-secondary-100 py-36">
         <div className="w-[1280px] max-w-[80%] mx-auto">
           <Subtitle
@@ -177,29 +178,33 @@ export default function Home() {
                 />
               </div>
             </Container>
-            <Container style="flex justify-center items-center">
-              <div className="flex w-full h-[70vh]">
-                <div className="flex items-end">
-                  <div>
-                    <Image
+            <Container>
+              <div className="flex w-full gap-[30px] h-[591px]">
+                <div className="flex flex-col  gap-[30px] self-end">
+                  <div className="pt-[30px]">
+                    <img
                       src="/assets/home/listing-house-1.png"
                       width={232}
                       height={205}
                     />
-                    <Image
-                      src="/assets/home/listing-house-3.png"
-                      width={194}
-                      height={260}
+                  </div>
+
+                  <img
+                    src="/assets/home/listing-house-3.png"
+                    width={194}
+                    height={260}
+                    className="self-end"
+                  />
+                </div>
+                <div className="flex flex-col gap-[30px] grow">
+                  <div className="w-full ">
+                    <img
+                      src="/assets/home/listing-house-2.png"
+                      className="w-full"
+                      height={331}
                     />
                   </div>
-                </div>
-                <div>
-                  <Image
-                    src="/assets/home/listing-house-2.png"
-                    width={243}
-                    height={331}
-                  />
-                  <Image
+                  <img
                     src="/assets/home/listing-house-4.png"
                     width={215}
                     height={135}
@@ -212,7 +217,7 @@ export default function Home() {
       </section>
 
       <section className="bg-secondary-50 pt-32 pb-20">
-        <div className="w-[1280px] max-w-[80%] mx-auto flex flex-col space-y-6">
+        <div className="w-[1280px] max-w-[80%] mx-auto flex flex-col space-y-6 px-10">
           <Label
             style="text-secondary-600 text-base text-center"
             text="Socials"
@@ -255,6 +260,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-secondary-100 py-32">
         <div className="w-[1280px] max-w-[80%] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">

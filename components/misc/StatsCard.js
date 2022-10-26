@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Subtitle from "./headings/Subtitle";
+import Subtitle from "../headings/Subtitle";
 
 const StatsCard = ({ src, title, width, height, label }) => {
   return (

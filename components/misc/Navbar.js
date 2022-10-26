@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./button/Button";
-import List from "./list/List";
-import ListItem from "./list/ListItem";
+import Button from "../button/Button";
+import List from "../list/List";
+import ListItem from "../list/ListItem";
 
 const Navbar = () => {
   return (

@@ -13,6 +13,7 @@ const images = [
   "/assets/about/member-6.png",
   "/assets/about/member-7.png",
   "/assets/about/member-8.png",
+  "/assets/about/member-9.png",
 ];
 
 const Team = () => {

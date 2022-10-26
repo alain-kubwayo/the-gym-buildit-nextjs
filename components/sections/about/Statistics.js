@@ -28,6 +28,34 @@ const stats = [
   },
 ];
 
+const logos = [
+  {
+    src: "/assets/home/partners-logo-1.png",
+    width: "51.06",
+    height: "40",
+  },
+  {
+    src: "/assets/home/partners-logo-2.png",
+    width: "60",
+    height: "40",
+  },
+  {
+    src: "/assets/home/partners-logo-3.png",
+    width: "217.17",
+    height: "40",
+  },
+  {
+    src: "/assets/home/partners-logo-4.png",
+    width: "78",
+    height: "30",
+  },
+  {
+    src: "/assets/home/partners-logo-5.png",
+    width: "94.61",
+    height: "45",
+  },
+];
+
 const Statistics = () => {
   return (
     <section className="bg-secondary-100 py-20">
@@ -53,31 +81,14 @@ const Statistics = () => {
           ))}
         </div>
         <div className="flex justify-center gap-x-8 py-10 border-t border-secondary-300 border-b">
-          <PartnersLogoContainer
-            src="/assets/home/partners-logo-1.png"
-            width="51.06"
-            height="43.17"
-          />
-          <PartnersLogoContainer
-            src="/assets/home/partners-logo-2.png"
-            width="60"
-            height="40"
-          />
-          <PartnersLogoContainer
-            src="/assets/home/partners-logo-3.png"
-            width="217.17"
-            height="40"
-          />
-          <PartnersLogoContainer
-            src="/assets/home/partners-logo-4.png"
-            width="78"
-            height="30"
-          />
-          <PartnersLogoContainer
-            src="/assets/home/partners-logo-5.png"
-            width="94.61"
-            height="45"
-          />
+          {logos.map((logo, i) => (
+            <PartnersLogoContainer
+              key={i}
+              src={logo.src}
+              width={logo.width}
+              height={logo.height}
+            />
+          ))}
         </div>
       </div>
     </section>

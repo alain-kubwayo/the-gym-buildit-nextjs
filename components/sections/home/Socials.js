@@ -3,7 +3,7 @@ import Image from "next/image";
 import Label from "../../headings/Label";
 import Subtitle from "../../headings/Subtitle";
 
-const imageSources = [
+const images = [
   "/assets/home/socials-image-2.png",
   "/assets/home/socials-image-2.png",
   "/assets/home/socials-image-3.png",
@@ -22,8 +22,8 @@ const Socials = () => {
           description="On Instagram"
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {imageSources.map((source, i) => (
-            <Image key={i} src={source} width={328} height={278} />
+          {images.map((src, i) => (
+            <Image key={i} src={src} width={328} height={278} />
           ))}
         </div>
       </div>

@@ -37,7 +37,7 @@ const Form = () => {
 
       <Button
         style="text-white rounded-btn bg-secondary-500 py-2.5 px-6.5 w-full"
-        label="Send message"
+        label="Send Message"
       />
     </form>
   );

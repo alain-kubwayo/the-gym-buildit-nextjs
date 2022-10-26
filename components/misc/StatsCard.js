@@ -1,4 +1,5 @@
 import Image from "next/image";
+// Component imports
 import Subtitle from "../headings/Subtitle";
 
 const StatsCard = ({ src, title, width, height, label }) => {

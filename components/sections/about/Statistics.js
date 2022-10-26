@@ -4,9 +4,33 @@ import Subtitle from "../../headings/Subtitle";
 import StatsCard from "../../misc/StatsCard";
 import PartnersLogoContainer from "../../misc/PartnersLogoContainer";
 
+const stats = [
+  {
+    src: "/assets/about/stats-icon-1.svg",
+    width: "70",
+    height: "70",
+    title: ">200",
+    label: "Number",
+  },
+  {
+    src: "/assets/about/stats-icon-2.svg",
+    width: "70",
+    height: "70",
+    title: ">70",
+    label: "Number",
+  },
+  {
+    src: "/assets/about/stats-icon-3.svg",
+    width: "70",
+    height: "70",
+    title: ">20",
+    label: "Number",
+  },
+];
+
 const Statistics = () => {
   return (
-    <section className="bg-secondary-100 pt-32 pb-20">
+    <section className="bg-secondary-100 py-20">
       <div className="w-[1280px] max-w-[80%] mx-auto flex flex-col space-y-6">
         <Label
           style="text-secondary-600 text-base text-center"
@@ -16,28 +40,17 @@ const Statistics = () => {
           style="text-secondary-400 text-4xl text-center font-semibold"
           description="Development in numbers"
         />
-        <div className="flex flex-col md:flex-row justify-between bg-secondary-200 py-8 px-10 w-2/3 mx-auto">
-          <StatsCard
-            src="/assets/about/stats-icon-1.svg"
-            width="70"
-            height="70"
-            title=">200"
-            label="Number"
-          />
-          <StatsCard
-            src="/assets/about/stats-icon-2.svg"
-            width="70"
-            height="70"
-            title=">70"
-            label="Number"
-          />
-          <StatsCard
-            src="/assets/about/stats-icon-3.svg"
-            width="70"
-            height="70"
-            title=">20"
-            label="Number"
-          />
+        <div className="flex flex-col gap-y-10 md:gap-y-0 md:flex-row justify-between bg-secondary-200 py-8 px-10 w-full md:w-2/3 mx-auto">
+          {stats.map((stat, i) => (
+            <StatsCard
+              key={i}
+              src={stat.src}
+              width={stat.width}
+              height={stat.height}
+              title={stat.title}
+              label={stat.label}
+            />
+          ))}
         </div>
         <div className="flex justify-center gap-x-8 py-10 border-t border-secondary-300 border-b">
           <PartnersLogoContainer

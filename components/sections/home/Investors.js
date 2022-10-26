@@ -1,10 +1,11 @@
 import Image from "next/image";
+// Component imports
 import PartnersLogoContainer from "../../misc/PartnersLogoContainer";
 import Container from "../../misc/Container";
 import Label from "../../headings/Label";
 import Title from "../../headings/Title";
 import Content from "../../misc/Content";
-import Button from "../../button/Button";
+import PrimaryButton from "../../button/PrimaryButton";
 
 const Investors = () => {
   return (
@@ -45,8 +46,9 @@ const Investors = () => {
           </Container>
           <Container style="flex flex-col justify-center gap-y-8">
             <Label style="text-secondary-600" text="About us" />
-            <Title style="text-secondary-400 text-4xl leading-subtitle font-bold">
-              Owner and investor with a <br /> reputation
+            <Title style="text-secondary-400 text-lg md:text-4xl leading-1 md:leading-subtitle font-bold">
+              Owner and investor with a <br className="hidden md:block" />
+              reputation
             </Title>
             <Content>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc{" "}
@@ -59,11 +61,8 @@ const Investors = () => {
               sed fermentum. Mauris dui tortor, viverra vel ultrices in, <br />
               congue sed ex.
             </Content>
-            <div className="w-1/3">
-              <Button
-                style="text-white rounded-btn bg-secondary-500 py-2.5 px-6.5 w-full"
-                label="Explore"
-              />
+            <div className="w-full md:w-1/3">
+              <PrimaryButton text="Explore" />
             </div>
           </Container>
         </div>

@@ -1,10 +1,13 @@
 import Image from "next/image";
+// Component imports
 import Header from "../../misc/Header";
 import Navbar from "../../misc/Navbar";
 import Container from "../../misc/Container";
 import Title from "../../headings/Title";
 import Content from "../../misc/Content";
 import Button from "../../button/Button";
+import PrimaryButton from "../../button/PrimaryButton";
+import SecondaryButton from "../../button/SecondaryButton";
 
 const Hero = () => {
   return (
@@ -13,8 +16,8 @@ const Hero = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 py-10 gap-x-6">
         <Container style="flex flex-col justify-center gap-y-20">
           <div>
-            <Title style="text-6.5xl font-bold text-secondary-400 leading-title">
-              Development <br />
+            <Title style="text-lg md:text-6.5xl font-bold text-secondary-400 leading-title">
+              Development <br className="hidden md:block" />
               Company
             </Title>
             <Content>
@@ -22,15 +25,9 @@ const Hero = () => {
               with a reputation
             </Content>
           </div>
-          <div className="space-x-3">
-            <Button
-              style="text-white rounded-btn bg-secondary-500 py-2.5 px-6.5"
-              label="Services"
-            />
-            <Button
-              style="text-secondary-400 rounded-btn bg-secondary-200 py-2.5 px-6.5"
-              label="About the company"
-            />
+          <div className="space-x-0 space-y-8 md:space-y-0 md:space-x-3">
+            <PrimaryButton text="Services" />
+            <SecondaryButton text="About the company" />
           </div>
         </Container>
         <Container style="space-y-10">

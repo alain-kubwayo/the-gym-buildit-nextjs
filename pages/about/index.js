@@ -10,8 +10,11 @@ const About = () => {
       <Head>
         <title>Buildit | About</title>
       </Head>
+      {/* Hero section */}
       <Hero />
+      {/* Statistics section */}
       <Statistics />
+      {/* Team section */}
       <Team />
     </>
   );
